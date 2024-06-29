@@ -1,0 +1,163 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ * Style.css
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*
+ * Steeve MOKOKO - Portfolio
+ */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ * RÉINITIALISATION DU CSS
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li { list-style: none; }
+
+img, ion-icon, a, button, time, span { display: block; }
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    font: inherit;
+}
+
+::selection {
+    background: var();
+    color: var();
+}
+
+:focus { outline-color: var(); }
+
+html { font-family: var(--ff-poppins); }
+
+body { background: var();}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ * PROPRIÉTÉS PERSONALISÉES
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+:root {
+
+    /*
+     * colors
+     */
+
+    /* solide */
+
+     --blanc: #ffffff;
+     --blanc-2: #f8f9fa;
+     --blanc-3: #e9ecef;
+     --gris: #dee2e6;
+     --gris-2: #D6D6D6;
+     --gris-3: #DEDEDE;
+     --gris-5: #636363;
+     --gris-10: #1C1C1C;
+ 
+     --noir: #000000;
+     --noir-2: #001233;
+ 
+     --bleu : #0466c8;
+     --bleu-2: #0353a4;
+     --bleu-3: #023e7d;
+     --bleu-4: #002855;
+ 
+     --rouge : #ce371c;
+
+    /* gradient */
+
+     --bg-gradient-bleu: linear-gradient(
+        to bottom right, 
+        hsl(210, 96.08%, 40%), 
+        hsl(210.19, 96.41%, 32.75%)
+      );
+      --bg-gradient-blanc: linear-gradient(
+        to bottom right, 
+        hsl(210, 16.67%, 97.65%), 
+        hsl(210, 15.79%, 92.55%)
+      ), hsl(210, 13.79%, 88.63%);
+      --bg-gradient-mix-bleu: linear-gradient(
+        to bottom right, 
+        hsl(211.76, 100%, 16.67%), 
+        hsl(210, 13.79%, 88.63%)
+      );
+      --bg-gradient-mix-bleu-2: linear-gradient(
+        135deg, 
+        hsl(0, 0%, 100%), 
+        hsl(210, 96.08%, 40%)
+      ), hsl(211.76, 100%, 16.67%);
+      --border-gradient-mix-bleu-3: linear-gradient(
+        to bottom right, 
+        hsl(210.19, 96.41%, 32.75%), 
+        hsl(210.73, 96.85%, 24.9%)
+      );
+      --text-gradient-bleu: linear-gradient(
+        to right, 
+        hsl(210.73, 96.85%, 24.9%), 
+        hsl(211.76, 100%, 16.67%)
+      );
+
+
+    /*
+     * typography
+     */
+    
+    /* font-family */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    /* font-size */
+    --fs-1: 24px;
+    --fs-2: 18px;
+    --fs-3: 17px;
+    --fs-4: 16px;
+    --fs-5: 15px;
+    --fs-6: 14px;
+    --fs-7: 13px;
+    --fs-8: 11px;
+
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+
+
+    /*
+     * shadow
+     */
+
+     --shadow-1: -4px 8px 24px hsla(220, 1%, 50%, 0.25);
+     --shadow-2: 0 16px 30px hsla(0, 0%, 100%, 0.25);
+     --shadow-3: 0 16px 40px hsla(0, 0%, 29%, 0.25);
+     --shadow-4: 0 25px 50px hsla(0, 0%, 54%, 0.25);
+     --shadow-5: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+    /*
+     * transition
+     */
+
+     --transition-1: 0.25s ease;
+     --transition-2: 0.5s ease-in-out;
+
+
+     
+
+}
