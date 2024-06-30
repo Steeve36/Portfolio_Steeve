@@ -10,9 +10,7 @@
 
 
     <!--~~~~~~ Liens Favicons ~~~~~~-->
-    <link href="/your-path-to-uicons/css/uicons-rounded-regular.css" rel="stylesheet">
-    <link href="/your-path-to-uicons/css/uicons-rounded-solid.css" rel="stylesheet">
-
+   
 
     <!--~~~~~~ Liens Google font ~~~~~~-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +20,106 @@
 </head>
 <body>
 
+   <!--~~~~~~ MAIN ~~~~~~-->
+   <main>
 
+    <!--~~~~~~ SIDEBAR ~~~~~~-->
+
+    <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+            <figure class="photo-profile">
+                <img src="./assets/images/avatar-steeve.png" alt="" width="80px">
+            </figure>
+
+            <div class="contenu-info">
+                <h1 class="nom" title="Steeve MOKOKO">Steeve Mokoko</h1>
+
+                <p class="title">Développeur Android</p>
+            </div>
+
+            <button class="plus_d_infos-btn" data-sidebar-btn>
+                <span>En savoir plus</span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </button>
+        </div>
+
+        <div class="sidebar-plus_d_infos">
+            <div class="sidebar-plus_d_infos">
+                <div class="separateur"></div>
+                <ul class="list-info-contact">
+                    <li class="item-contact">
+                        <div class="icone-box">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                        </div>
+                        <div class="info-contact">
+                            <p class="titre-contact">Email</p>
+                            <a href="mailto:steeve.mokoko14@gmail.com" class="lien-contact">steeve.mokoko14@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="item-contact">
+                        <div class="icone-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div class="info-contact">
+                            <p class="titre-contact">Téléphone</p>
+                            <a href="tel:+33644886207" class="lien-contact">+33 6 44 88 62 07</a>
+                        </div>
+                    </li>
+                    <li class="item-contact">
+                        <div class="icone-box">
+                            <ion-icon name="calendar-number-outline"></ion-icon>
+                        </div>
+                        <div class="info-contact">
+                            <p class="titre-contact">Date de naissance</p>
+                            <time datetime="10/09/1999">10 Septembre 1999</time>
+                        </div>
+                    </li>
+                    <li class="item-contact">
+                        <div class="icone-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="info-contact">
+                            <p class="titre-contact">Adresse</p>
+                            <address>Paris, Île-de-France, FRANCE</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separateur"></div>
+
+                <ul class="list-reseaux">
+                    <li class="item-reseaux">
+                        <a href="#" class="lien-reseau">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="item-reseaux">
+                        <a href="#" class="lien-reseau">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </aside>
+
+
+
+
+</main>
 
 
 
     <!--~~~~~~ Lien JavaScript ~~~~~~-->
-    <link rel="stylesheet" href="assets/js/script.js">
+    <script src="assets/js/script.js" defer></script>
+
+
+    <!--~~~~~~ Liens ionicons ~~~~~~-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
 </body>
 </html>
