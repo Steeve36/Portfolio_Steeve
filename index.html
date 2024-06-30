@@ -23,98 +23,145 @@
    <!--~~~~~~ MAIN ~~~~~~-->
    <main>
 
-    <!--~~~~~~ SIDEBAR ~~~~~~-->
+        <!--~~~~~~ SIDEBAR ~~~~~~-->
+        <aside class="sidebar" data-sidebar>
+            <div class="sidebar-info">
 
-    <aside class="sidebar" data-sidebar>
+                <figure class="photo-profile">
+                    <img src="./assets/images/avatar-steeve.png" alt="" width="80px">
+                </figure>
 
-        <div class="sidebar-info">
+                <div class="contenu-info">
+                    <h1 class="nom" title="Steeve MOKOKO">Steeve Mokoko</h1>
+                    <p class="title">Développeur Android</p>
+                </div>
 
-            <figure class="photo-profile">
-                <img src="./assets/images/avatar-steeve.png" alt="" width="80px">
-            </figure>
-
-            <div class="contenu-info">
-                <h1 class="nom" title="Steeve MOKOKO">Steeve Mokoko</h1>
-
-                <p class="title">Développeur Android</p>
+                <button class="plus_d_infos-btn" data-sidebar-btn>
+                    <span>En savoir plus</span>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
             </div>
 
-            <button class="plus_d_infos-btn" data-sidebar-btn>
-                <span>En savoir plus</span>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </button>
-        </div>
-
-        <div class="sidebar-plus_d_infos">
             <div class="sidebar-plus_d_infos">
-                <div class="separateur"></div>
-                <ul class="list-info-contact">
-                    <li class="item-contact">
-                        <div class="icone-box">
-                            <ion-icon name="mail-open-outline"></ion-icon>
-                        </div>
-                        <div class="info-contact">
-                            <p class="titre-contact">Email</p>
-                            <a href="mailto:steeve.mokoko14@gmail.com" class="lien-contact">steeve.mokoko14@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="item-contact">
-                        <div class="icone-box">
-                            <ion-icon name="call-outline"></ion-icon>
-                        </div>
-                        <div class="info-contact">
-                            <p class="titre-contact">Téléphone</p>
-                            <a href="tel:+33644886207" class="lien-contact">+33 6 44 88 62 07</a>
-                        </div>
-                    </li>
-                    <li class="item-contact">
-                        <div class="icone-box">
-                            <ion-icon name="calendar-number-outline"></ion-icon>
-                        </div>
-                        <div class="info-contact">
-                            <p class="titre-contact">Date de naissance</p>
-                            <time datetime="10/09/1999">10 Septembre 1999</time>
-                        </div>
-                    </li>
-                    <li class="item-contact">
-                        <div class="icone-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-                        <div class="info-contact">
-                            <p class="titre-contact">Adresse</p>
-                            <address>Paris, Île-de-France, FRANCE</address>
-                        </div>
-                    </li>
-                </ul>
+                <div class="sidebar-plus_d_infos">
+                    <div class="separateur"></div>
+                    <ul class="list-info-contact">
+                        <li class="item-contact">
+                            <div class="icone-box">
+                                <ion-icon name="mail-open-outline"></ion-icon>
+                            </div>
+                            <div class="info-contact">
+                                <p class="titre-contact">Email</p>
+                                <a href="mailto:steeve.mokoko14@gmail.com" class="lien-contact">steeve.mokoko14@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="item-contact">
+                            <div class="icone-box">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </div>
+                            <div class="info-contact">
+                                <p class="titre-contact">Téléphone</p>
+                                <a href="tel:+33644886207" class="lien-contact">+33 6 44 88 62 07</a>
+                            </div>
+                        </li>
+                        <li class="item-contact">
+                            <div class="icone-box">
+                                <ion-icon name="calendar-number-outline"></ion-icon>
+                            </div>
+                            <div class="info-contact">
+                                <p class="titre-contact">Date de naissance</p>
+                                <time datetime="10/09/1999">10 Septembre 1999</time>
+                            </div>
+                        </li>
+                        <li class="item-contact">
+                            <div class="icone-box">
+                                <ion-icon name="location-outline"></ion-icon>
+                            </div>
+                            <div class="info-contact">
+                                <p class="titre-contact">Adresse</p>
+                                <address>Paris, Île-de-France, FRANCE</address>
+                            </div>
+                        </li>
+                    </ul>
 
-                <div class="separateur"></div>
+                    <div class="separateur"></div>
 
-                <ul class="list-reseaux">
-                    <li class="item-reseaux">
-                        <a href="#" class="lien-reseau">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                        </a>
-                    </li>
-                    <li class="item-reseaux">
-                        <a href="#" class="lien-reseau">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="list-reseaux">
+                        <li class="item-reseaux">
+                            <a href="#" class="lien-reseau">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="item-reseaux">
+                            <a href="#" class="lien-reseau">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </aside>
+
+        <!--~~~~~~ MAIN CONTENT ~~~~~~-->
+        <div class="main-contenu">
+
+            <!--~~~~~~ NAVBAR ~~~~~~-->
+            <nav class="navbar">
+                <ul class="navbar-list">
+
+                    <li class="item-navbar">
+                        <button class="lien-navbar active" data-nav-link="about">À Propos</button>
+                    </li>
+                    <li class="item-navbar">
+                        <button class="lien-navbar" data-nav-link="resume">Mon CV</button>
+                    </li>
+                    <li class="item-navbar">
+                        <button class="lien-navbar" data-nav-link="portfolio">Portfolio</button>
+                    </li>
+                    <li class="item-navbar">
+                        <button class="lien-navbar" data-nav-link="contact">Contact</button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!--~~~~~~ À PROPOS ~~~~~~-->
+            <article class="a-propos active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">À propos de moi</h2>
+                </header>
+
+            </article>
+
+            <!--~~~~~~ MON CV ~~~~~~-->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Mon CV</h2>
+                </header>
+
+            </article>
+
+            <!--~~~~~~ PORTFOLIO ~~~~~~-->
+            <article class="portfolio" data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+            </article>
+
+            <!--~~~~~~ CONTACT ~~~~~~-->
+            <article class="contact" data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+            </article>
+
         </div>
-
-    </aside>
-
-
-
-
-</main>
-
-
+    </main>
 
     <!--~~~~~~ Lien JavaScript ~~~~~~-->
-    <script src="assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 
 
     <!--~~~~~~ Liens ionicons ~~~~~~-->

@@ -137,6 +137,7 @@ body { background: var();}
     --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
+    --fw-700: 700;
 
 
     /*
@@ -239,7 +240,7 @@ main {
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
-  transition: var(--transition-2);
+  transition: max-height var(--transition-2);
 }
 
 .sidebar.active { max-height: 405px; }
@@ -359,5 +360,55 @@ main {
   font-size: 18px;
 }
 .item-reseaux .lien-reseau:hover { color: var(--gris-5); }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*\
+ * NAVBAR
+\*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--blanc-3);
+  border-radius: 12px 12px 0 0;
+  box-shadow: var(--shadow-2);
+  z-index: 5;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.lien-navbar {
+  color: var(--gris-5);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  padding: 20px 10px;
+  transition: color var(--transition-1);
+}
+
+.lien-navbar:hover,
+.lien-navbar:focus {
+  color: var(--gris-5);
+  background-color: var(--blanc-3);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.lien-navbar.active {
+  padding: 5px 10px;
+  background-color: var(--bleu-3);
+  color: var(--blanc-2);
+  border-radius: 10px;
+}
+
+
 
 }
